@@ -30,6 +30,10 @@ namespace HangmanGameMVC.View
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\nCongratulations! You guessed the word!");
+                Console.WriteLine("   O  ");
+                Console.WriteLine(" \\ | /");
+                Console.WriteLine("  / \\");
+                Console.ResetColor(); 
             }
             else
             {
@@ -80,9 +84,10 @@ namespace HangmanGameMVC.View
                 hangman[4] = "           |           /|\\";
                 hangman[5] = "           |           / \\";
             }
-
+            Console.ForegroundColor = ConsoleColor.Red;
             foreach (var line in hangman)
                 Console.WriteLine(line);
+            Console.ResetColor();
         }
     }
 }
