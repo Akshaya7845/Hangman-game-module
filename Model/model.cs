@@ -21,7 +21,7 @@ namespace HangmanGameMVC.Model
 		{
 			if (!File.Exists(filePath))
 			{
-				Console.WriteLine($"Error: CSV file not found at {filePath}");
+				Console.WriteLine($"error: csv file not found at {filePath}");
 				Environment.Exit(1);
 			}
 
@@ -46,7 +46,7 @@ namespace HangmanGameMVC.Model
 
 			if (Categories.Count == 0)
 			{
-				Console.WriteLine("No words loaded from the CSV file.");
+				Console.WriteLine("no words loaded from the csv file.");
 				Environment.Exit(1);
 			}
 		}
@@ -55,7 +55,7 @@ namespace HangmanGameMVC.Model
 		{
 			if (Categories.Count == 0)
 			{
-				Console.WriteLine("Word list is empty. Did you forget to call LoadFromCSV?");
+				Console.WriteLine("word list is empty");
 				Environment.Exit(1);
 			}
 
